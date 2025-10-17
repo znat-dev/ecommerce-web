@@ -1,4 +1,9 @@
-#root {
+body {
+  background-color: white;
+  margin: 0px;
+}
+
+/*#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -38,5 +43,64 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #ffffff;
+}
+*/
+
+
+/*navbar style starts here*/
+.navbar {
+  width: 100%;
+  height: 15vh; /* 30% of the viewport height */
+  background-color:#1a1a2e; /* light background for visibility */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes title left, links right */
+  padding: 1rem;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.navbar .links {
+  display: flex;
+  gap: 1rem; /* adds space between the links */
+}
+
+.navbar .links a:hover {
+  color: #fff000;
+}
+
+@media (max-width: 600px) {
+  .navbar .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .links a {
+    margin: 0.5rem 0;
+  }
+}
+
+/*Product style starts here */
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+.market {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  margin: 100px;
 }
