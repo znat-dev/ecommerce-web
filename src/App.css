@@ -88,14 +88,14 @@ body {
 }
 
 /*Product style starts here */
-.product {
+.products {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   width: 100%;
   height: auto;
 }
-.market {
+.product {
   display: flex;
   flex-direction: column;
   justify-content: center;

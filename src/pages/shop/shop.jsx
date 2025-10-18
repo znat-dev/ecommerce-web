@@ -2,13 +2,13 @@ import React from 'react';
 import { PRODUCTS } from '../../products';
 import { Product } from './product';
 
-const Shop = () => {
+const Shop = (props) => {
   return (
     <div>
       <div>
         <h1>Shopping</h1>
       </div>
-      <div>
+      <div className='products'>
             {PRODUCTS.map((product) => (
             <Product data={product} />
         ))}
