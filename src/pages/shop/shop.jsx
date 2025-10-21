@@ -1,18 +1,19 @@
 import React from 'react';
 import { PRODUCTS } from '../../products';
-import { Product } from './product';
+import Product from './product';
+import '../../App.css';
 
 const Shop = (props) => {
   return (
     <div>
-      <div>
-        <h1>Shopping</h1>
+      <div className='shop-title'>
+        <h1>Shopping Lists</h1>
       </div>
-      <div className='products'>
-            {PRODUCTS.map((product) => (
-            <Product data={product} />
-        ))}
-      </div>
+     <b> <div className='products'>
+           {PRODUCTS.map((product) => (
+            <Product data={product} /> ))} 
+         </div>
+     </b>
     </div>
   );
 };
