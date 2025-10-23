@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://znat-dev.github.io/ecommerce-web",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist -b gh-pages --repo https://github.com/znat-dev/ecommerce-web.git"
   },
   "dependencies": {
     "axios": "^1.12.2",
