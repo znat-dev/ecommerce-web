@@ -6,7 +6,7 @@ import "../App.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h1 className='megenagna' >Megenagna Online Shopping Market</h1>
+      <h1 className='megenagna' >Online Shopping Market</h1>
         <div className="links">
             <Link to="/">Shop</Link>
             <Link to="cart">
